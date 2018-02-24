@@ -19,8 +19,8 @@ import Charts
 import Material.Scheme
 
 
-styles : String
-styles =
+stylesheet : Html a
+stylesheet = Options.stylesheet
     """
    .demo-options .mdl-checkbox__box-outline {
       border-color: rgba(255, 255, 255, 0.89);
@@ -52,7 +52,8 @@ view model =
                 , drawer = [ drawerHeader model, viewDrawer model ]
                 , tabs = ( [], [] )
                 , main =
-                    [ viewBody model
+                    [ stylesheet
+                    , viewBody model
                     , Snackbar.view model.snackbar |> Html.map Snackbar
                     , viewSource model
                     , helpDialog model
