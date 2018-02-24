@@ -23,9 +23,9 @@ main =
                     [ Material.Scheme.topWithScheme Color.Cyan Color.LightBlue (Html.div [] [])
                     , View.view model
                     , Html.node "script" [ Html.attribute "src" "https://cdn.polyfill.io/v2/polyfill.js?features=Event.focusin" ] []
-                    , Html.node "script" [ Html.attribute "src" "https://cdnjs.cloudflare.com/ajax/libs/dialog-polyfill/0.4.4/dialog-polyfill.min.js" ] []
+                    , Html.node "script" [ Html.attribute "src" "https://cdnjs.cloudflare.com/ajax/libs/dialog-polyfill/0.4.9/dialog-polyfill.min.js" ] []
                     , Html.node "link"
-                        [ Html.attribute "href" "https://cdnjs.cloudflare.com/ajax/libs/dialog-polyfill/0.4.4/dialog-polyfill.min.css"
+                        [ Html.attribute "href" "https://cdnjs.cloudflare.com/ajax/libs/dialog-polyfill/0.4.9/dialog-polyfill.min.css"
                         , Html.attribute "rel" "stylesheet"
                         , Html.attribute "type" "text/css"
                         ]
